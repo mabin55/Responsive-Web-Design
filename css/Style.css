@@ -1,0 +1,378 @@
+	*{margin-top:0px;}
+	
+	html{
+		background-color: #00e6e6;
+	}
+	
+	body{
+		background-color: #99ffff;
+		border: thin solid black;
+		width: 1280px;
+		margin: auto;
+	}
+	
+	/* Desktop Header*/
+	header{
+		width:1260px;
+		background-color: white;
+		height:100px;
+		border-radius:10px 10px;
+		border: thin solid black;
+		margin: 5px auto 5px;
+	}
+
+	/* Desktop Navigation*/
+	nav{
+		width:1260px;
+		background-color: #00ff99;
+		height:35px;
+		list-style-type:none;
+		border-radius:10px 10px;
+		text-allign: center;
+		border: thin solid black;
+		margin: 5px auto 5px;
+	}
+
+	/* Center section of index page*/
+	section{
+		width: 600px;
+		background-color: #e6ffff;
+		float:left;
+		height: 600px;
+		margin-right:0px;
+		border-radius: 0px 0px 0px 0px;
+		border: thin solid black;
+		margin-left: 5px;
+		margin-right:5px;
+		margin-bottom: 5px;
+	}
+	
+	/* left side section in all page*/
+	aside{
+		width:320px;
+		background-color:#99ccff;
+		float: left;
+		height: 600px;
+		border-radius: 10px 0px 0px 10px;
+		padding: 0px;
+		overflow: auto;
+		font-size: 20px;
+		border: thin solid black;
+		margin-left: 10px;
+	}
+	
+	/* right side section in all page*/
+	article{
+		width:320px;
+		background-color: #bb99ff;
+		float: left;
+		height: 600px;
+		border-radius: 0px 10px 10px 0px; 
+		border: thin solid black;
+		margin-right: 10px;
+	}
+
+	/* footer section of all pages*/
+	footer{
+		width:1220px;
+		background-color: #d24dff;
+		height:100px;
+		color: white;
+		text-align: center;
+		border-radius: 10px 10px;
+		overflow: auto;
+		padding: 20px;
+		border: thin solid black;
+		margin: 5px auto 5px;
+	}
+	
+	/* main section of robot types pages*/
+	section2{
+		width: 930px;
+		background-color: #e6ffff;
+		float: left;
+		height: 900px;
+		margin-left: 5px;
+		margin-bottom: 5px;
+		font-size: 18px;
+		border-radius: 0px 10px 10px 0px;
+	}
+	
+	/* left section of robot types pages*/
+	aside2{
+		width:320px;
+		background-color:#99ccff;
+		float: left;
+		height: 900px;
+		border-radius: 10px 0px 0px 10px;
+		padding: 0px;
+		overflow: auto;
+		font-size: 20px;
+		border: thin solid black;
+		margin-left: 10px;
+	}
+
+	/*section of business hours and entrance fees*/
+	section3{
+		width: 1220px;
+		background-color: #e6ffff;
+		text-align: center;
+		float: left;
+		height: 300px;
+		margin-left: 10px;
+		margin-bottom: 5px;
+		padding: 20px;
+		font-size: 18px;
+		border-radius: 10px 10px;
+	}	
+
+	/*section of contact page*/
+	section4{
+		width: 1220px;
+		background-color: #e6ffff;
+		float: left;
+		height: 700px;
+		margin-left: 10px;
+		margin-bottom: 5px;
+		padding: 20px;
+		font-size: 18px;
+		border-radius: 10px 10px;
+	}
+
+	header{
+		list-style: none;
+	}
+	
+	img{
+		display:block;
+		margin:auto;
+	}
+	
+	/* text attributes in navigation bar*/
+	nav li{	
+		margin: 0 5px 10px 0;
+		padding: 0;
+		list-style: none;
+		display: inline-block;
+	}
+
+	nav ul {
+ 		margin: 0;
+ 	 	padding: 0;
+	}
+
+	a{
+		text-decoration:none;
+		padding:10px;
+		font-family:Tahoma, Geneva, sans-serif;
+		font-size:24px;
+		margin-right:10px;
+	}
+
+	a:active {
+		color: yellow;
+    		background-color: transparent;
+    		text-decoration: underline;
+	}
+	
+	a:hover{
+		color:red;
+		text-decoration:underline;
+	}
+	
+	p{
+		padding: 5px;
+		text-align: justify;
+	}
+	
+	/* Types of robot attributes*/
+	div.types {
+		margin: 5px;
+		border: 1px solid black;
+		float: left;
+		width: 250px;
+	}
+	
+	div.types img{
+		width: 100%;
+		height: 250px;
+	}
+
+	div.description{
+		padding: 5px;
+		text-align: center;
+	}
+
+/*Making a breakpoint for mobile view less than 500 pixel*/
+@media only screen and (max-width: 480px){
+
+	nav{
+		width: auto;
+		position: relative;
+	}
+	
+	body{
+		width: 100%;
+		margin: auto;
+		border: thin solid black;
+	}
+
+	header{
+		width: auto;
+		backgroun-color: white;
+		height: 70px;
+		border-radius: 5px 5px;
+		border: thin solid black;
+	}
+	
+	nav ul{
+		width:100%;
+		padding: .6Em 0em ;
+		position: absolute;
+		margin:auto;
+	
+		border: solid 1px #aaa;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.3);	
+	}
+	
+	nav li {
+		display: none; /* hide all <li> items */
+		margin: 0;
+	}
+	nav .current {
+		display: block; /* show only current <li> item */
+	}
+	nav a {
+		display: block;
+		padding: 0px 0px 0px 30px;
+		text-align: left;
+	}
+	nav .current a {
+		background: none;
+		
+	}
+
+	/* on nav hover */
+	nav ul:hover {
+		background-color: #e6ffff;
+	}
+	nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+		background-color: #e6ffff;
+	}
+	/* Making the footer responsive for mobile view*/
+	footer{
+		width:auto;
+		height:auto;
+		border-radius:5px;
+	}
+	/* Making the aside section responsive for mobile view*/
+	aside{
+		width:auto;
+		height:auto;
+		border-radius: 5px;
+		padding:0px;
+		font-size:1em;
+	}
+	/* Making aside secion 2 hidden*/
+	aside2 { 
+   		display: none;
+	}
+	
+	section{
+		width:auto;
+		height:auto; 
+		background-color:#e6ffff; 
+		float: left;
+		font-size:1eml
+	}
+	/* Making the article responsive for mobile view*/
+	article{
+		width:100%;
+		height:auto;
+		background-color:#B97DB0;
+		float:left;
+		border-radius: 5px;
+		font-size:1em;
+	}
+	nav{
+		height:50px;
+		list-style-type:none;
+		border-radius:10px 10px;
+		text-align: center;
+	}
+	/* Making the main section 2,3 and 4 responsive for mobile view*/
+	section2{
+		width:100%;
+		height:auto;
+		border-radius: 5px;
+	}
+
+	section3{
+		width:auto;
+		height:auto;
+		border-radius: 5px;
+	}
+
+	section4{
+		width:auto;
+		height:auto;
+		border-radius: 5px;
+	}
+	
+	img{
+		height: auto;
+		width: 100%;
+	}	
+
+	#robotTypes{
+		width:100%;
+		background-color:white;
+		float:left;
+		height:auto;
+		margin-right:0px;
+		font-size:1em;
+		border-radius: 5px;
+	}
+
+	.responsive {
+    		max-width: 100%;
+		
+    		height: auto;
+	}
+	a{
+		font-size:1.5em;
+
+	}
+	div.types {
+		margin: 10px;
+		width: 41%;
+	}
+	/* Making the font of the page responsive for mobile view*/
+	div.description {
+    		padding: 5px;
+    		text-align: center;
+		font-size:.8em;
+		
+	}
+	input{
+		font-size: 1em;
+		max-width:90%;
+	}
+	select{
+		font-size: 1em;
+		max-width:90%;
+	}
+
+	textarea {
+		font-size: 1em;
+		width: 90%;
+	}
+		form{
+		font-size: 1em;
+	}
+}
+
+	
